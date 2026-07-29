@@ -201,6 +201,18 @@ class EtmpController @Inject()(
                 dateRange = dateRange
               )
 
+            case "IN9002221222" =>
+              generateObligationsResponse(
+                data = changeDateScenario1,
+                dateRange = dateRange
+              )
+
+            case "IN9002221223" =>
+              generateObligationsResponse(
+                data = changeDateScenario2,
+                dateRange = dateRange
+              )
+
             case _ =>
               generateObligationsResponse(
                 data = defaultData,
