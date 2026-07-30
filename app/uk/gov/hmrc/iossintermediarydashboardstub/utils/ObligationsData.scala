@@ -368,6 +368,32 @@ object ObligationsData {
     )
   )
 
+  val changeDateScenario1: Map[String, Map[LocalDate, EtmpObligationsFulfilmentStatus]] = Map(
+    "IM9002221221" -> Map(
+      LocalDate.of(2025, 3, 1) -> Open,
+      LocalDate.of(2025, 2, 1) -> Fulfilled,
+      LocalDate.of(2025, 1, 1) -> Fulfilled
+    ),
+    "IM9002221222" -> Map(
+      LocalDate.of(2025, 3, 1) -> Open,
+      LocalDate.of(2025, 2, 1) -> Fulfilled,
+      LocalDate.of(2025, 1, 1) -> Fulfilled
+    )
+  )
+
+  val changeDateScenario2: Map[String, Map[LocalDate, EtmpObligationsFulfilmentStatus]] = Map(
+    "IM9002221223" -> Map(
+      LocalDate.of(2025, 3, 1) -> Open,
+      LocalDate.of(2025, 2, 1) -> Fulfilled,
+      LocalDate.of(2025, 1, 1) -> Fulfilled
+    ),
+    "IM9002221224" -> Map(
+      LocalDate.of(2025, 3, 1) -> Open,
+      LocalDate.of(2025, 2, 1) -> Fulfilled,
+      LocalDate.of(2025, 1, 1) -> Fulfilled
+    )
+  )
+
   def generateObligationsResponse(
                                    data: Map[String, Map[LocalDate, EtmpObligationsFulfilmentStatus]],
                                    dateRange: ObligationsDateRange
