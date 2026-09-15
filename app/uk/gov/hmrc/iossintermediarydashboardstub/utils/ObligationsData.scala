@@ -394,6 +394,14 @@ object ObligationsData {
     )
   )
 
+  val vatGroupClients: Map[String, Map[LocalDate, EtmpObligationsFulfilmentStatus]] = Map(
+    "IM9002111002" -> Map(
+      LocalDate.of(2026, 3, 1) -> Open,
+      LocalDate.of(2026, 2, 1) -> Fulfilled,
+      LocalDate.of(2026, 1, 1) -> Fulfilled
+    )
+  )
+
   def generateObligationsResponse(
                                    data: Map[String, Map[LocalDate, EtmpObligationsFulfilmentStatus]],
                                    dateRange: ObligationsDateRange

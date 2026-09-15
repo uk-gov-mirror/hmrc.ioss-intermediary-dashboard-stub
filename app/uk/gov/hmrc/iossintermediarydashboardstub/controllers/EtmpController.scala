@@ -213,6 +213,12 @@ class EtmpController @Inject()(
                 dateRange = dateRange
               )
 
+            case "IN9002111002" =>
+              generateObligationsResponse(
+                data = vatGroupClients,
+                dateRange = dateRange
+              )
+
             case _ =>
               generateObligationsResponse(
                 data = defaultData,
